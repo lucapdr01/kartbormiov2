@@ -5,7 +5,7 @@ function OurVision() {
 
     return (
         <>
-        <section className="splash-bg pb-10 pt-4 px-6 md:px-8 lg:px-0" id='vision'>
+        <section className="bottom-section-bg pb-10 pt-4 px-6 md:px-8 lg:px-0" id='dove'>
             <div className="text-white mx-auto">
 
             <div className="md:grid md:grid-cols-11 md:gap-12 lg:gap-20 items-center lg:items-start">

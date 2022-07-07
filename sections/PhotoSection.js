@@ -2,7 +2,7 @@ import React from 'react';
 import Card from './partial/Card';
 import Card1 from '../public/images/particolare-min.png'
 import Card2 from '../public/images/inizio-pista-min.png'
-import Card3 from '../public/images/fine-pista-min.jpg'
+import Card3 from '../public/images/Card3.png'
 
 
 function PhotoSection() {
@@ -30,7 +30,6 @@ function PhotoSection() {
 
             {/* Content */}
             <div className="text-center md:col-span-11">
-            <div className='mt-4 border-b border-gray-400 max-w-2xl mx-auto'></div>
             </div>
             {/* Three Cards */}
             <div className="text-center lg:col-span-1"></div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 //import logoBig from '../../../public/images/logoBig.png'
 import React from 'react';
 import SplashCard from "./partial/SplashCard";
-//import TopBar from './partial/TopBar';
+import TopBar from './partial/TopBar';
 
 
 function SplashScreen() {
@@ -12,7 +12,7 @@ function SplashScreen() {
         <section className="splash-bg2 px-6 md:px-8 lg:px-0 pb-4">
             <div className="mx-auto px-8 md:px-0">
             {/* Header */}
-           {/* <TopBar/>*/}
+           <TopBar/>
             <div className="pt-2 pb-2 md:py-8 lg:py-10"></div>
             <div className="md:grid md:grid-cols-11 md:gap-12 lg:gap-20 items-center">
             

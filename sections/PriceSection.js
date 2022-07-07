@@ -4,7 +4,7 @@ function PriceSection() {
 
     return (
         <>
-        <section className="splash-bg pt-8 pb-32 px-6 md:px-8 lg:px-0" id="search">
+        <section className="splash-bg pt-8 pb-32 px-6 md:px-8 lg:px-0" id="tariffe">
             <div className="mx-auto">
 
             <div className="md:grid md:grid-cols-12 md:gap-5 lg:gap-5 items-center">

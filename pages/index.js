@@ -6,6 +6,7 @@ import SplashScreen from '../sections/SplashScreen'
 import PhotoSection from '../sections/PhotoSection'
 import PriceSection from '../sections/PriceSection'
 import WhereSection from '../sections/WhereSection'
+import Footer from '../sections/Footer'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <PhotoSection/>
       <PriceSection/>
       <WhereSection/>
+      <Footer/>
       </main>
     </div>
   )
