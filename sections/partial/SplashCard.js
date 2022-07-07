@@ -1,7 +1,9 @@
 import React from 'react';
+import { Suspense } from 'react';
 import Image from "next/image";
 import Card3 from '../../public/images/kart.png'
 import { Canvas, useFrame } from '@react-three/fiber'
+import Model from '../../Model';
 
 function MyRotatingBox() {
     const myMesh = React.useRef();
@@ -13,11 +15,12 @@ function MyRotatingBox() {
   
     return (
       <mesh ref={myMesh}>
-        <boxBufferGeometry args={[3, 3, 3]}/>
-        <meshPhongMaterial color="red" />
+        <Model scale={[2,2,2]} rotation={ [1,0,0]}/>
       </mesh>
     );
   }
+
+
 
 function SplashCard() {
     
@@ -30,8 +33,10 @@ function SplashCard() {
             </div> */}
             <div className='h-96 border-2'>
             <Canvas className='border-2'>
-                <ambientLight intensity={0.1} />
-                <MyRotatingBox />
+                <ambientLight intensity={0.3} />
+                <Suspense fallback={null}>
+                  <MyRotatingBox/>
+                </Suspense>
             </Canvas>
             </div>
         </div>
