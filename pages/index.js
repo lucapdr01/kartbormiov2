@@ -5,6 +5,7 @@ import Header from '../sections/Header'
 import SplashScreen from '../sections/SplashScreen'
 import PhotoSection from '../sections/PhotoSection'
 import PriceSection from '../sections/PriceSection'
+import WhereSection from '../sections/WhereSection'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <SplashScreen/>
       <PhotoSection/>
       <PriceSection/>
+      <WhereSection/>
       </main>
     </div>
   )
