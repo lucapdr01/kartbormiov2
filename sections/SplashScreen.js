@@ -21,15 +21,15 @@ function SplashScreen() {
             <div className="md:col-span-11 lg:col-span-4 mb-8 md:mb-0 text-center md:text-left">
                 <div className='text-center mx-auto pt-6 pb-12'>
                 </div>
-               <h1 className="h1 my-title font-bold text-white text-4xl lg:text-6xl mb-4 font-red-hat-display text-left px-2" data-aos="fade-down">
+               <h1 className="h1 my-title font-bold text-white text-6xl lg:text-8xl mb-4 font-red-hat-display text-left px-2" data-aos="fade-down">
                 Kartdromo Bormio
                 </h1>
-                <p className="text-gray-400 text-left md:px-2" data-aos="fade-down" data-aos-delay="150">
+                <p className="text-gray-400 text-left px-2 md:px-2 lg:text-xl" data-aos="fade-down" data-aos-delay="150">
                 Pista di Go Kart a Bormio | Divertimento per giovani
                 </p>
             </div>
-            <div className="md:col-span-1 lg:col-span-1 mb-8 md:mb-0 text-center md:text-left"></div>
-            <div className="md:col-span-11 lg:col-span-4 mb-8 md:mb-0 text-center md:text-left">
+            
+            <div className="md:col-span-11 lg:col-span-5 mb-8 md:mb-0 text-center md:text-left">
              <SplashCard/>
             </div>
             <div className="md:col-span-1 lg:col-span-1 mb-8 md:mb-0 text-center md:text-left"></div>

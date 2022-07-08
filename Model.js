@@ -7,31 +7,37 @@ import { useGLTF } from "@react-three/drei";
 
 export default function Model({ ...props }) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/tire.glb");
+  const { nodes, materials } = useGLTF("/kart.glb");
   return (
     <group ref={group} {...props} dispose={null}>
-      <group scale={[1, 0.52999896, 1]}>
+      <group rotation={[Math.PI / 2, 0, 0]}>
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Cylinder_1.geometry}
-          material={materials["Material.001"]}
+          geometry={nodes["KART-OBJ_1"].geometry}
+          material={materials.Telaio}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Cylinder_2.geometry}
-          material={materials["Material.002"]}
+          geometry={nodes["KART-OBJ_2"].geometry}
+          material={materials.Carena}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Cylinder_3.geometry}
-          material={materials["Material.003"]}
+          geometry={nodes["KART-OBJ_3"].geometry}
+          material={materials.Gomma}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes["KART-OBJ_4"].geometry}
+          material={materials.Sedile}
         />
       </group>
     </group>
   );
 }
 
-useGLTF.preload("/tire.glb");
+useGLTF.preload("/kart.glb");

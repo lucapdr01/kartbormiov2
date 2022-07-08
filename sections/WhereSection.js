@@ -22,7 +22,7 @@ function OurVision() {
             </div>
             {/* Maps */}
             <div className="text-center md:col-span-11 h-screen p-2">
-                <iframe className="mx-auto h-full w-full max-w-5xl" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3551.917077594209!2d10.35735794650271!3d46.45251684670352!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x99adf92b2fac5279!2sKartdromo+Mimo+Villoresi!5e0!3m2!1sit!2sit!4v1498047424638" frameborder="0" allowfullscreen></iframe>
+                <iframe className="mx-auto h-full w-full max-w-5xl rounded-xl border-r-4 border-b-8 border-gray-400" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3551.917077594209!2d10.35735794650271!3d46.45251684670352!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x99adf92b2fac5279!2sKartdromo+Mimo+Villoresi!5e0!3m2!1sit!2sit!4v1498047424638" frameborder="0" allowfullscreen></iframe>
             </div>
             </div>
             </div>
