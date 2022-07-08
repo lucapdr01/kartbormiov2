@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta name="description" content="Sito Ufficiale del Kartdromo di Bormio. Luogo ideale per i giovani e per il divertimento per chi si trova in Alta Valle nelle vicinaze di Bormio"/>
         <meta name="keywords" content="Kartdromo, Bormio, Sport, Kart, Alta Valtellina, divertimento, go kart, giovani, divertimento bormio, cosa fare a Bormio"/>
-        <meta http-equiv="author" content="Luca Pedranzini" />
+        <meta httpEquiv="author" content="Luca Pedranzini" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
