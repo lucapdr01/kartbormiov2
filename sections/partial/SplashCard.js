@@ -1,11 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState} from 'react';
 import { Suspense } from 'react';
 import Image from "next/image";
 import Card3 from '../../public/images/kart.png'
 import { Canvas, useFrame } from '@react-three/fiber'
 import Model from '../../Model';
 
-function MyRotatingBox() {
+
+function getWindowDimensions() {
+  if (typeof window !== "undefined") {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+    width,
+    height
+  };
+  }
+}
+
+function SplashCard() {
+
+  const [windowDimensions, setWindowDimensions] = useState();
+    
+  const dimArrayMax = [0.08,0.08,0.08]
+  const dimArrayMin = [0.045,0.045,0.045]
+        
+  let dimArrayCur = dimArrayMax;
+
+  function MyRotatingBox() {
     const myMesh = React.useRef();
   
     useFrame(({ clock }) => {
@@ -15,15 +35,32 @@ function MyRotatingBox() {
   
     return (
       <mesh ref={myMesh}>
-        <Model scale={[0.08,0.08,0.08]} position={[0,-1.2,0]}/>
+        <Model scale={dimArrayCur} position={[0,-1.2,0]}/>
       </mesh>
     );
   }
 
+  useEffect(()=>{
+    console.log("dimchange");
 
+    if (getWindowDimensions().width > 600){
+      dimArrayCur = dimArrayMax;
+    }
+    else{ dimArrayCur = dimArrayMin}
+  
+  
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+      if (getWindowDimensions().width > 600){
+        dimArrayCur = dimArrayMax;
+      }
+      else{ dimArrayCur = dimArrayMin}
+    }
+  
+  window.addEventListener('resize', handleResize);
+  return () => window.removeEventListener('resize', handleResize);
+  },[windowDimensions]);
 
-function SplashCard() {
-    
     return (
         <>
         <div className="my-5">
