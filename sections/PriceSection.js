@@ -24,7 +24,7 @@ function PriceSection() {
             <div className="text-center text-white table-bg md:col-span-10 lg:col-span-10 p-5 rounded-3xl border border-white">
                 <div className="md:grid md:grid-cols-12 md:gap-4 lg:gap-4 items-center">
                     
-                    <div className="md:col-span-6 lg:col-span-6 pl-2 pr-12 md:border-r border-white">
+                    <div className="md:col-span-6 lg:col-span-6 px-2 md:pl-2 md:pr-12 md:border-r border-white">
                         <div className="md:grid md:grid-cols-2 items-left text-white">
                         
                         <div className="col-span-2 px-2 text-center">
@@ -32,8 +32,8 @@ function PriceSection() {
                         </div>
 
                             {/* Noleggio */}
-                            <div className="col-span-2 px-2 mt-4">
-                                <div className='text-sm uppercase font-bold text-left w-fit py-2 px-4 mb-4 orange-bt text-white rounded-xl'> Kart da noleggio</div>
+                            <div className="col-span-2 px-2 text-center mt-4">
+                                <div className='text-sm uppercase font-bold text-center mx-auto md:mx-1 w-fit py-2 px-4 mb-4 orange-bt text-white rounded-xl'> Kart da noleggio</div>
                             </div>
                             <div className="col-span-1 px-2 ">
                                 <div className="text-center border-b border-white border-opacity-50 mb-2">
@@ -54,7 +54,7 @@ function PriceSection() {
                             
                             {/* Kart Private */}
                             <div className="col-span-2 px-2 mt-4">
-                                <div className='text-sm uppercase font-bold text-left w-fit py-2 px-4 mb-4 orange-bt text-white rounded-xl'> Kart Privato</div>
+                                <div className='text-sm uppercase font-bold text-left w-fit mx-auto md:mx-1 py-2 px-4 mb-4 orange-bt text-white rounded-xl'> Kart Privato</div>
                             </div>
                             <div className="col-span-1 px-2 ">
                                 <div className="text-center border-b border-white border-opacity-50 mb-2">
@@ -75,7 +75,7 @@ function PriceSection() {
                             
                             {/* Condeucente Aggregato */}
                             <div className="col-span-2 px-2 mt-4">
-                                <div className='text-sm uppercase font-bold text-left w-fit py-2 px-4 mb-4 orange-bt text-white rounded-xl'> Conducente Aggregato</div>
+                                <div className='text-sm uppercase font-bold text-left w-fit mx-auto md:mx-1 py-2 px-4 mb-4 orange-bt text-white rounded-xl'> Conducente Aggregato</div>
                             </div>
                             <div className="col-span-1 px-2 ">
                                 <div className="text-center border-b border-white border-opacity-50 mb-2">
@@ -106,7 +106,7 @@ function PriceSection() {
 
                         {/* Luglio, Agosto*/}
                         <div className="col-span-2 px-2 mt-4">
-                            <div className='text-sm uppercase font-bold text-left w-fit py-2 px-4 mb-4 orange-bt text-white rounded-xl'> Luglio e Agosto</div>
+                            <div className='text-sm uppercase font-bold text-left w-fit mx-auto md:mx-1 py-2 px-4 mb-4 orange-bt text-white rounded-xl'> Luglio e Agosto</div>
                         </div>
                         <div className="col-span-1 px-2 ">
                             <div className="text-center border-b border-white border-opacity-50 mb-2">
@@ -127,7 +127,7 @@ function PriceSection() {
 
                         {/* Kart Private */}
                         <div className="col-span-2 px-2 mt-4">
-                            <div className='text-sm uppercase font-bold text-left w-fit py-2 px-4 mb-4 orange-bt text-white rounded-xl'> Giungo e Settembre</div>
+                            <div className='text-sm uppercase font-bold text-left w-fit mx-auto md:mx-1 py-2 px-4 mb-4 orange-bt text-white rounded-xl'> Giungo e Settembre</div>
                         </div>
                         <div className="col-span-1 px-2 ">
                             <div className="text-center border-b border-white border-opacity-50 mb-2">
