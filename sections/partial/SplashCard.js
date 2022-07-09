@@ -1,9 +1,9 @@
 import React, { useEffect, useState} from 'react';
 import { Suspense } from 'react';
-import Image from "next/image";
 import Card3 from '../../public/images/kart.png'
 import { Canvas, useFrame } from '@react-three/fiber'
 import Model from '../../Model';
+import { Rings } from  'react-loader-spinner'
 
 
 function getWindowDimensions() {
@@ -17,6 +17,7 @@ function getWindowDimensions() {
 }
 
 function SplashCard() {
+  const [loaded, setLoaded] = useState(false);
 
   const [windowDimensions, setWindowDimensions] = useState();
     
@@ -42,6 +43,7 @@ function SplashCard() {
 
   useEffect(()=>{
     console.log("dimchange");
+    console.log("kart"+loaded);
 
     if (getWindowDimensions().width > 600){
       dimArrayCur = dimArrayMax;
@@ -59,13 +61,13 @@ function SplashCard() {
   
   window.addEventListener('resize', handleResize);
   return () => window.removeEventListener('resize', handleResize);
-  },[windowDimensions]);
+  },[windowDimensions, loaded]);
 
     return (
         <>
         <div className="my-5">
             <div className='h-96'>
-            <Canvas className='' shadowMap>
+            <Canvas className='' shadowMap  onLoad={()=>{setLoaded(true)}}>
                 <pointLight position={[100, 100, 100]} castShadow/>
                 <pointLight position={[-100, -100, -100]} castShadow/>
                 <Suspense fallback={null}>
