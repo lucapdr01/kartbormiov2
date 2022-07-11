@@ -121,7 +121,7 @@ function PriceSection() {
                                 <label className="uppercase font-bold text-sm">Orario</label>
                             </div>
                             <div className="text-center block text-opacity-50 mb-4">
-                                <label className="uppercase text-sm">10:00 - 19:00</label>
+                                <label className="uppercase text-sm">10:00 - 19:00 *</label>
                             </div>
                         </div>
 
@@ -142,11 +142,14 @@ function PriceSection() {
                                 <label className="uppercase font-bold text-sm">Orario</label>
                             </div>
                             <div className="text-center block text-opacity-50">
-                                <label className="uppercase text-sm">10:00 - 19:00</label>
+                                <label className="uppercase text-sm">10:00 - 19:00 *</label>
                             </div>
                         </div>
                         <div className="col-span-2 px-2 text-center">
                             <div className='text-sm uppercase font-bold text-center py-2 px-4 mb-4 text-gray-400'> ( Giorni feriali aperto su prenotazione ) </div>
+                        </div>
+                        <div className="col-span-2 px-2 text-center">
+                            <div className='text-sm uppercase font-bold text-center py-2 px-4 mb-4 text-gray-400'> * 10:00 - 15:00 per i Kart Privati </div>
                         </div>
 
                     </div>  
