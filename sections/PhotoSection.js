@@ -2,7 +2,7 @@ import React from 'react';
 import Card from './partial/Card';
 import Card1 from '../public/images/particolare-min.png'
 import Card2 from '../public/images/inizio-pista-min.png'
-import Card3 from '../public/images/Card3.png'
+import Card3 from '../public/images/fine-pista-min.jpg'
 
 
 function PhotoSection() {

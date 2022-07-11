@@ -1,6 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
-/* import logoComp from '../../../images/logo-comp.png' */
 
 function BottomBar(props) {
 

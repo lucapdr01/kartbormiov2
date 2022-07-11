@@ -1,9 +1,8 @@
 import React, { useEffect, useState} from 'react';
 import { Suspense } from 'react';
-import Card3 from '../../public/images/kart.png'
 import { Canvas, useFrame } from '@react-three/fiber'
 import Model from '../../Model';
-import { Rings } from  'react-loader-spinner'
+
 
 
 function getWindowDimensions() {
