@@ -48,7 +48,7 @@ function PriceSection() {
                                     <label className="uppercase font-bold text-sm">Prezzo</label>
                                 </div>
                                 <div className="text-center block text-opacity-50 mb-4">
-                                    <label className="uppercase text-sm">18€</label>
+                                    <label className="uppercase text-sm">19€</label>
                                 </div>
                             </div>
                             
