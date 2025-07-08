@@ -27,8 +27,31 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Deploying to Firebase Hosting
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To deploy the app to Firebase Hosting, follow these steps:
+
+1. **Build the project:**
+
+   ```bash
+   npm run build
+   ```
+
+2. **Export the static site:**
+
+   ```bash
+   npx next export
+   ```
+
+   This will generate a static `out/` directory with the production-ready files.
+
+3. **Deploy to Firebase:**
+
+   ```bash
+   firebase deploy
+   ```
+
+Make sure your `firebase.json` is configured to use the `out/` directory as the `public` folder.
+
+
